@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { createRoot } from 'react-dom'; // Import createRoot
+import { createRoot } from 'react-dom'; 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore'; // Update the import to include specific Firestore functions
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA2DWWi36MFD1AZUjWXQmcJHdYF0O8wc7k",
   authDomain: "articles-and-thumbnail.firebaseapp.com",
