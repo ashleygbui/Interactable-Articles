@@ -52,11 +52,12 @@ const App = () => {
     <div>
       <h1>Bay Area News</h1>
       <ul>
-        {articles.map(article => (
+      {articles.map(article => (
           <li key={article.id}>
-            <h2>{article.headline}</h2>
-            <img src={article.thumbnail} alt={article.headline} style={{ width: '100px', height: 'auto' }} />
-            <p><a href={article.url} target="_blank" rel="noopener noreferrer">Read more</a></p>
+            <a href={article.url} target="_blank" rel="noopener noreferrer">
+              <h2>{article.headline}</h2>
+              <img src={article.thumbnail} alt={article.headline} style={{ width: '100px', height: 'auto' }} />
+            </a>
           </li>
         ))}
       </ul>
